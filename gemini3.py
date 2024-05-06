@@ -15,6 +15,9 @@ from dotenv import load_dotenv  # To load environment variables from a file
 
 # Load environment variables and configure API key (assuming .env file is present)
 load_dotenv()
+
+os.environ["GOOGLE_API_KEY"] = "AIzaSyAXOjM6OYg0bDS-NckePUAK_IAb_15G_z0"
+
 os.getenv("GOOGLE_API_KEY")  # Access the Google API key from environment variables
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))  # Configure the API key
 
