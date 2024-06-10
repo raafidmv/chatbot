@@ -75,9 +75,12 @@ def main():
 
         # Display the results
         st.write(f"Input Question: {input_question}")
-        st.write(f"Corrected Question: {correct_question(input_question)}")
-        st.write(f"Most Similar Question: {most_similar_question['Tax Enquiry']}")
-        st.write(f"Similarity Score: {similarity_score}")
+        if similarity_score < 0.3:
+            st.write("I don't know the answer, Kindly clarify the question and ask relevant to the application.")
+        else:
+            st.write(f"Corrected Question: {correct_question(input_question)}")
+            st.write(f"Most Similar Question: {most_similar_question['Tax Enquiry']}")
+            st.write(f"Similarity Score: {similarity_score}")
 
 if __name__ == "__main__":
     main()
