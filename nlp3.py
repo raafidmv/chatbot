@@ -61,7 +61,7 @@ def main():
     st.title("Similar Question Finder")
 
     # Fixed file path
-    input_file = '/Users/raafid_mv/Downloads/qns_ar.csv'
+    input_file = 'qns_ar.csv'
     df = remove_even_rows(input_file)
 
     # Get user input
