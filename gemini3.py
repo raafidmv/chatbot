@@ -1,3 +1,19 @@
+# langchain==0.1.17
+# langchain-community==0.0.36
+# langchain-core==0.1.50
+# langchain-experimental==0.0.57
+# langchain-google-genai==0.0.4
+# langchain-openai==0.1.6
+# langchain-text-splitters==0.0.1
+# langcodes==3.3.0
+# langdetect==1.0.9
+# langsmith==0.1.53
+# pandas==2.2.1
+# streamlit==1.33.0
+# streamlit-chat==0.1.1
+# python-dotenv
+
+
 # Import necessary libraries
 import streamlit as st  # For creating web apps
 import os  # For interacting with the operating system
