@@ -73,7 +73,7 @@ def main():
 
         # Display the results
         st.write(f"Input Question: {input_question}")
-        st.write(f"Most Similar Question Index: {most_similar_index+1}")
+        st.write(f"Most Similar Question Index: {most_similar_index+2}")
         st.write(f"Most Similar Question: {most_similar_question}")
         st.write(f"Similarity Score: {similarity_score}")
 
