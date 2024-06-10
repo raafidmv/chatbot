@@ -12,7 +12,7 @@ nltk.download('stopwords')
 stop_words = set(stopwords.words('arabic'))
 
 # Function to remove even rows
-@st.cache_data
+# @st.cache_data
 def remove_even_rows(input_file):
     df = pd.read_csv(input_file)
     df = df.iloc[::2]  # Keep only odd rows
