@@ -58,7 +58,7 @@ def find_most_similar_question(input_question, df, column='Tax Enquiry'):
 
 def main():
     # Streamlit app
-    st.title("Similar Question Finder")
+    st.title("Similar Question Finder (Arabic....)")
 
     # Fixed file path
     input_file = 'qns_ar.csv'
