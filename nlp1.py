@@ -82,8 +82,8 @@ def main():
     if st.button("Find Similar Question"):
         most_similar_question, similarity_score = find_most_similar_question(input_question, df)
         st.write("Input Question:", input_question)
-        st.write("Translated Input Question:", translate_text(input_question))
-        st.write("Corrected Input Question:", correct_question(translate_text(input_question)))
+        # st.write("Translated Input Question:", translate_text(input_question))
+        # st.write("Corrected Input Question:", correct_question(translate_text(input_question)))
         st.write("Most Similar Question:", most_similar_question['questions'])
         st.write("Similarity Score:", similarity_score)
 
