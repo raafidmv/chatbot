@@ -11,7 +11,7 @@ nltk.download('stopwords')
 stop_words = set(stopwords.words('english'))
 
 # Function to remove even rows
-@st.cache_data
+# @st.cache_data
 def remove_even_rows(input_file):
     df = pd.read_csv(input_file)
     df = df.iloc[::2]  # Keep only odd rows
@@ -60,14 +60,14 @@ def find_most_similar_question(input_question, df, column='Tax Enquiry'):
 
 def main():
     # Streamlit app
-    st.title("Similar Question Finder")
+    st.title("Similar Question Finder (English...)")
 
     # Fixed file path
-    input_file = '/Users/raafid_mv/Downloads/qns_eng.csv'
+    input_file = 'qns_eng.csv'
     df = remove_even_rows(input_file)
 
     # Get user input
-    input_question = st.text_input("Enter your question")
+    input_question = st.text_input("Enter your question in english")
 
     if input_question:
         # Find the most similar question
