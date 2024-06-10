@@ -73,6 +73,9 @@ def main():
 
         # Display the results
         st.write(f"Input Question: {input_question}")
+        if similarity_score < 0.3:
+            st.write("I don't know the answer, Kindly clarify the question and ask relevant to the application.")
+        else:
         st.write(f"Most Similar Question Index: {most_similar_index+2}")
         st.write(f"Most Similar Question: {most_similar_question}")
         st.write(f"Similarity Score: {similarity_score}")
